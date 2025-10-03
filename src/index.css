@@ -1,0 +1,165 @@
+* { 
+  box-sizing: border-box; 
+}
+
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 0; 
+  background: #f7f7f7; 
+  color: #222; 
+}
+
+.app-container { 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 16px; 
+}
+
+.topbar { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 12px 0; 
+}
+
+.topbar h1 { 
+  margin: 0; 
+  font-size: 1.4rem; 
+  color: #0a58ca; 
+}
+
+.topbar nav a { 
+  margin-left: 10px; 
+  text-decoration: none; 
+  color: #333; 
+}
+
+.main-content { 
+  margin-top: 16px; 
+  background: #fff; 
+  padding: 16px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+}
+
+.footer { 
+  margin-top: 12px; 
+  text-align: center; 
+  color: #666; 
+  font-size: 0.9rem; 
+}
+
+.user-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+  gap: 12px; 
+}
+
+.user-card { 
+  padding: 12px; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 6px; 
+  background: #fff; 
+}
+
+.user-card h3 { 
+  margin: 0 0 6px 0; 
+  font-size: 1.05rem; 
+}
+
+.user-card p { 
+  margin: 4px 0; 
+  font-size: 0.95rem; 
+  color: #444; 
+}
+
+.btn { 
+  display: inline-block; 
+  padding: 0 14px; 
+  border-radius: 6px; 
+  text-decoration: none; 
+  cursor: pointer; 
+  height: 38px;
+  line-height: 38px;
+  font-size: 0.95rem;
+}
+
+.btn-primary { 
+  background: #0a58ca; 
+  color: #fff; 
+  border: none; 
+}
+
+.btn-ghost { 
+  background: transparent; 
+  color: #0a58ca; 
+  border: 1px solid #0a58ca; 
+}
+
+.search-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.search-actions .input {
+  flex: 1;
+  min-width: 200px;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.search-row { 
+  display: flex; 
+  gap: 10px; 
+  align-items: center; 
+  flex: 1;
+}
+
+.form { 
+  max-width: 600px; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.label { 
+  font-weight: 600; 
+  font-size: 0.95rem; 
+  margin: 10px;
+}
+
+.input-inline { 
+  padding: 8px; 
+  border-radius: 6px; 
+  border: 1px solid #ccc; 
+}
+
+.error { 
+  color: #bb2124; 
+  font-size: 0.9rem; 
+}
+
+@media (max-width: 768px) {
+  .topbar { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 8px; 
+  }
+  .search-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+}
