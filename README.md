@@ -1,16 +1,23 @@
-# React + Vite
+# React User Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ky projekt është i zhvilluar me React + Vite.
 
-Currently, two official plugins are available:
+**Kodi kryesor ndodhet në branch-in `master`.**  
+Branch-i `main` është default, por përdoruesit duhet të shikojnë `master` për versionin funksional.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Përdorimi lokal
 
-## React Compiler
+1. Klono repository-n:
+   ```bash
+   git clone https://github.com/albulenamakolli1/react-user-manager.git
+2. Shko në folder:
+cd react-user-manager
+3. Shko në branch-in master:
+git checkout master
+4. Instaloni paketat:
+npm install
+5. Nisni projektin:
+npm run dev
+6.Hapni shfletuesin në linkun e treguar (zakonisht http://localhost:5173).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
